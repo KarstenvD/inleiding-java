@@ -7,13 +7,13 @@ public class Stoplight extends Applet {
     public void init(){
     }
     public void paint(Graphics g) {
-        // stoplight
+        // Stoplight base
         g.setColor(Color.lightGray);
         g.fillRoundRect(90,90,70,120,30,30);
         g.setColor(Color.black);
         g.drawRoundRect(100,100,50,100,30,30);
         g.fillRoundRect(100,100,50,100,30,30);
-        // lamps
+        // Lamps
         g.setColor(Color.red);
         g.fillOval(116,110,18,18);
         g.setColor(Color.orange);
