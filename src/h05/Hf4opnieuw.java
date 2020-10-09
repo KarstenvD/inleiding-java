@@ -9,9 +9,9 @@ public class Hf4opnieuw extends Applet {
 
 
     public void init() {
-        opvulkleur = Color.magenta;
+        setSize(700,500);
+        opvulkleur = Color.cyan;
         lijnkleur = Color.BLACK;
-        setSize(1000,500);
     }
     public void paint(Graphics g) {
         // Lijn

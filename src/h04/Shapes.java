@@ -25,6 +25,7 @@ public class Shapes extends Applet {
         g.drawOval(450,50,190,100);
         g.setColor(Color.magenta);
         g.fillArc(450,50,190,100,0,60);
+        g.setColor(Color.black);
         g.drawString("Ovaal met taartpunt",485,175);
         //Afgeronde rechthoek
         g.setColor(Color.black);
