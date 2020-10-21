@@ -11,8 +11,10 @@ public class Achtpunteen extends Applet {
     String plek;
     int a;
     int b;
+    boolean clicked;
     public void init() {
         setSize(1920,150);
+        clicked = false;
         schermtext = "deze :) staat op de verkeerde plek";
         a = 20;
         b = 20;
@@ -22,17 +24,22 @@ public class Achtpunteen extends Applet {
         add(knop);
     }
         public void paint(Graphics g){
-        g.setColor(Color.red);
-        g.fillRect(935,75,50,50);
-        g.setColor(Color.black);
+            if (clicked == true) {
+                g.setColor(Color.green);
+            } else {
+                g.setColor(Color.red);
+            }
+            g.fillRect(935,75,50,50);
+            g.setColor(Color.black);
             g.drawString(schermtext,a,b);
         }
         class KnopListener implements ActionListener{
-        public void actionPerformed(ActionEvent e){
-            a = 956;
-            b = 104;
-            schermtext = ":)";
-            repaint();
+            public void actionPerformed(ActionEvent e){
+                a = 956;
+                b = 104;
+                schermtext = ":)";
+                clicked = true;
+                repaint();
 
         }
 
