@@ -37,7 +37,7 @@ public class Achtpunteen extends Applet {
             public void actionPerformed(ActionEvent e){
                 a = 956;
                 b = 104;
-                schermtext = ":)";
+                schermtext = ":]" ;
                 clicked = true;
                 repaint();
 
