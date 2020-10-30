@@ -9,7 +9,6 @@ public class opdrachtpuntdrie extends  Applet {
     Button ok;
     TextField textvak;
     Double getal, getal2, getal3, btw;
-    int test;
     public void init() {
         getal = 0.0;
         getal2 = 0.0;
