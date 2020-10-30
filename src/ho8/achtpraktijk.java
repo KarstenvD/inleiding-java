@@ -13,7 +13,6 @@ public class achtpraktijk extends Applet {
     Button plus;
     Button min;
     String uitkomst;
-    Double links, rechts;
     public void init() {
         keer = new Button("*");
         keer.addActionListener(new Keer());
@@ -38,7 +37,7 @@ public class achtpraktijk extends Applet {
     }
     class Keer implements ActionListener {
         public void actionPerformed(ActionEvent e) {
-
+            uitkomst = left.getText();
         }
     }
     class Delen implements ActionListener {
