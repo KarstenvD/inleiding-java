@@ -32,7 +32,8 @@ public class Opdr126 extends Applet {
             gevonden = false;
             for (int teller = 0; teller < getallen.length; teller++) {
                 if(getallen[teller] == gezocht) {
-                    gevonden = true; voorkom++;
+                    gevonden = true;
+                    voorkom++;
                 }
             }
             repaint();
